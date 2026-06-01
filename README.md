@@ -1,2 +1,2 @@
 # avisos
-Página de avisos para os alunos advindos do professor 
+Quando tivermos um anúncio importante, você vai saber por aqui.
