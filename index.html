@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avisos - Language Lab</title>
+    
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #000000;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            height: 100vh;
+            overflow-y: auto;
+        }
+        
+        /* Scrollbar vermelha fina */
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.05);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #c20000;
+            border-radius: 10px;
+        }
+        
+        * {
+            scrollbar-width: thin;
+            scrollbar-color: #c20000 rgba(255, 255, 255, 0.05);
+        }
+        
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 12px 16px;
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Header compacto */
+        .header {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 8px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 16px;
+        }
+        
+        .date {
+            font-size: 11px;
+            color: #888;
+            font-weight: 400;
+        }
+        
+        .bell-icon {
+            color: #c20000;
+            width: 16px;
+            height: 16px;
+        }
+        
+        /* Conteúdo centralizado compacto */
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 12px;
+            padding: 20px 12px;
+            min-height: 120px;
+        }
+        
+        .inbox-icon {
+            width: 32px;
+            height: 32px;
+            color: #c20000;
+            opacity: 0.6;
+        }
+        
+        .message {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #c0c0c0;
+            max-width: 280px;
+        }
+        
+        /* Rodapé discreto */
+        .footer {
+            text-align: center;
+            padding-top: 12px;
+            font-size: 9px;
+            color: #444;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            margin-top: auto;
+        }
+        
+        /* Ajuste para telas muito pequenas */
+        @media (max-width: 480px) {
+            .container {
+                padding: 8px 12px;
+            }
+            .message {
+                font-size: 11px;
+            }
+            .content {
+                padding: 12px 8px;
+                gap: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header compacto -->
+        <div class="header">
+            <span class="date">1° de junho de 2026</span>
+            <i data-lucide="bell" class="bell-icon"></i>
+        </div>
+        
+        <!-- Conteúdo compacto -->
+        <div class="content">
+            <i data-lucide="inbox" class="inbox-icon"></i>
+            <div class="message">
+                Quando tivermos um anúncio importante,<br>
+                você vai saber por aqui.
+            </div>
+        </div>
+        
+        <!-- Rodapé -->
+        <div class="footer">
+            Language Lab • Avisos
+        </div>
+    </div>
+    
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
